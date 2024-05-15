@@ -1,24 +1,26 @@
 const TransactionHistory = ({ items } ) => {
     return (
-    <>
-        {
-                items.map(({ id, type, amount, currency }) => {
-                    return (
-                        <>
-                            <table key={id} >
-                                <thead >
-                                    <tr>
-                                        <th>{type}</th>
-                                        <th>{amount}</th>
-                                        <th>{currency}</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                    </>
-                    )
+        <>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Currency</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    {items.map(({ id, type, amount, currency }) => (
+                        
+                            <tr key={id}>
+                                <td>{type}</td>
+                                <td>{amount}</td>
+                                <td>{currency}</td>
+                            </tr>
                 
-            })
-        }
+                    ))}
+                </tbody>
+            </table>
       </>  
 
 
@@ -26,3 +28,4 @@ const TransactionHistory = ({ items } ) => {
 }
 
 export default TransactionHistory
+
