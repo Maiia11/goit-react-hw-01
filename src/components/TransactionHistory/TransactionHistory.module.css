@@ -1,0 +1,17 @@
+.table{
+    background-color: rgb(243, 236, 228);
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+.titleTable{
+    background-color: rgb(3, 3, 40);
+    color: rgb(245, 238, 228);
+}
+
+.table th,
+.table td {
+    border: 1px solid black;
+}
