@@ -1,4 +1,4 @@
-
+import css from './FriendListItem.module.css'
 
 const FriendListItem = ({ friend }) => {
   const { id, avatar, name, isOnline } = friend;
@@ -9,9 +9,9 @@ const FriendListItem = ({ friend }) => {
         <p >{name}</p>
         <p >
           {isOnline ? (
-            <span>Online</span>
+            <span className={css.online}>Online</span>
           ) : (
-            <span>Offline</span>
+          <span className={css.ofFline}>Offline</span>
           )}
         </p>
       </div>
