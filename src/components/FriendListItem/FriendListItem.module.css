@@ -5,3 +5,18 @@
 .ofFline{
     color: red;
 }
+
+
+.cards{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4%;
+    width: 75px;
+    padding: 7px;
+    
+    
+}
+
+.card{
+    margin: 0 auto;
+}

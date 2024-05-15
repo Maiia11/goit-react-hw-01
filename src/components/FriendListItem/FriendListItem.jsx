@@ -3,8 +3,8 @@ import css from './FriendListItem.module.css'
 const FriendListItem = ({ friend }) => {
   const { id, avatar, name, isOnline } = friend;
   return (
-    <li key={id} >
-      <div>
+    <li  key={id} className={css.cards} >
+      <div className={css.card}>
         <img src={avatar} alt="avatar" width="48" />
         <p >{name}</p>
         <p >
