@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 
-const Product = ({ name, tag, location, image, stats }) => {
+const Profile = ({ name, tag, location, image, stats }) => {
     return (
         <div className={css.container}>
             <div className={css.card}>
@@ -28,4 +28,4 @@ const Product = ({ name, tag, location, image, stats }) => {
         </div>)
 }
 
-export default Product
+export default Profile
